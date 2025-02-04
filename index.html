@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Trials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Testbed</title>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <header>
+    <h1>UC Drones Research Projects</h1>
+  </header>
+  <div class="container">
+        <div class="accordion" id="syncAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#syncInstructions">
+                        System Clock Synchronization Instructions
+                    </button>
+                </h2>
+                <div id="syncInstructions" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>
+                      Before proceeding, please check your system clock synchronization at <a href="https://www.time.gov" target="_blank">time.gov</a>. Ensure that your clock is off by less than 1 second.</p>
+                        <ul class="nav nav-tabs" id="syncTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button">Windows</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ios-tab" data-bs-toggle="tab" data-bs-target="#ios" type="button">iOS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="android-tab" data-bs-toggle="tab" data-bs-target="#android" type="button">Android</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="windows">
+                                <p>1. Open <strong>Settings</strong> (<kbd>Win</kbd> + <kbd>I</kbd>).</p>
+                                <p>2. Navigate to <strong>Time & Language</strong> > <strong>Date & Time</strong>.</p>
+                                <p>3. Ensure <strong>Set time automatically</strong> is turned ON.</p>
+                                <p>4. Click <strong>Sync now</strong> under <strong>Additional settings</strong>.</p>
+                            </div>
+                            <div class="tab-pane fade" id="ios">
+                                <p>1. Open the <strong>Settings</strong> app.</p>
+                                <p>2. Go to <strong>General</strong> > <strong>Date & Time</strong>.</p>
+                                <p>3. Toggle <strong>Set Automatically</strong> to ON.</p>
+                            </div>
+                            <div class="tab-pane fade" id="android">
+                                <p>1. Open the <strong>Settings</strong> app.</p>
+                                <p>2. Navigate to <strong>System</strong> > <strong>Date & Time</strong>.</p>
+                                <p>3. Enable <strong>Automatic date & time</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Project Card 1 -->
+      <div class="col">
+        <div class="card">
+          <img src="http://ucdrones.github.io/trials/vlos/vlos_AI.jpg" class="card-img-top" alt="Visual Line of Sight. Image Prompt: A simple diagram showing a sad person standing on the ground while flying a drone. The person is holding a remote control, looking up into the sky with a disappointed or worried expression. The drone is very small and barely visible in the distance, emphasizing how far it is.">
+          <div class="card-body text-center">
+            <h5 class="card-title">Visual Line of Sight</h5>
+            <a href="http://ucdrones.github.io/trials/vlos" class="btn btn-custom">Participate</a>
+            <a href="https://ucdrones-research.github.io/vlos_report/" class="btn btn-outline-secondary">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="http://ucdrones.github.io/trials/vigilance/rob_AI.jpg" class="card-img-top" alt="Vigilance during Drone Operations. Image Prompt: A black box designed to look like a robotic face, named Rob. The box has two LED lights as blinking eyes and a strip of LEDs forming a mouth. The LEDs give the face an expressive, futuristic look. The design is minimalistic and slightly futuristic, resembling a friendly robot. The background is neutral to emphasize the robotic face.">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vigilance during Drone Operations</h5>
+            <a href="http://ucdrones.github.io/trials/vigilance" class="btn btn-custom">Interface</a>
+            <a href="https://github.com/UCDrones-research/drones_vigilance_test" class="btn btn-outline-secondary">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col">
+        <div class="card">
+          <img src="http://ucdrones.github.io/trials/autonomy/auton_AI.jpg" class="card-img-top" alt="Planned vs Reactive Autonomy. Image Prompt: A simple diagram showing a person unable to control a drone. The person is holding a remote control with a panicked or afraid expression, looking up at the drone. The drone is flying erratically in different directions, with motion lines indicating instability. The diagram is minimalistic, using simple lines and clear labels to effectively convey the idea.">
+          <div class="card-body text-center">
+            <h5 class="card-title">Planned vs Reactive Autonomy</h5>
+            <a href="http://ucdrones.github.io/trials/autonomy" class="btn btn-custom">Interface</a>
+            <a href="#" class="btn btn-outline-secondary">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      
+      
+    </div>
+  </div>
+</body>
+<footer>
+    <p>2025 | UC Center of Excellence on UAS Safety | <a href="https://ucdrones.github.io/">UC Drones Knowledge Portal</a> | Contact us at <a href="mailto:UASsafety@ucmerced.edu">UASsafety@ucmerced.edu</a> for more information</p>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- partial -->
+  
+</body>
+</html>
